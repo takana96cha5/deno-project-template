@@ -40,50 +40,6 @@
 
 `.devcontainer/docker/nginx/conf.d/nginx.conf` ファイル内で、Nginxのリバースプロキシのポート番号を実際のアプリケーションのポート番号に合わせて調整してください。
 
-# 開発ワークフローの例(Example Development Workflow)
-
-1. 新しい機能やバグ修正のためにGitHubでイシューを作成します。
-
-2. イシューの内容に基づいて新しいブランチを作成します:
-
-   ```bash
-   git checkout -b feature/issue-123
-   ```
-
-3. 新しい機能を開発したりバグを修正したりします。
-
-4. 変更をコミットします:
-
-   ```bash
-   git add .
-   git commit -m "Add new feature for issue #123"
-   ```
-
-5. 変更をリモートリポジトリにプッシュします:
-
-   ```bash
-   git push -u origin feature/issue-123
-   ```
-
-6. GitHubでプルリクエストを作成します。
-
-7. コードレビューを受けて、必要に応じて変更を加えます。
-
-8. プルリクエストがマージされたら、ローカルのmainブランチを更新します:
-
-   ```bash
-   git checkout main
-   git pull
-   ```
-
-9. 古いブランチを削除します:
-
-   ```bash
-   git branch -d feature/issue-123
-   ```
-
-10. 次のタスクに取り掛かります。
-
 # 主要なファイルとその役割(Key Files and Their Roles)
 
 - `init.sh`: リポジトリを初期化し、`.git` ディレクトリを削除し、`.devcontainer/.env` ファイルを作成し、不要なファイルを削除します。
